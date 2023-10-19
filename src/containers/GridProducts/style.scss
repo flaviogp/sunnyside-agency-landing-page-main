@@ -1,0 +1,12 @@
+@import '../../components/Description/style.scss';
+@import '../../components/ImageContainer/style.scss';
+
+
+.grid-descriptions {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(500px, 1fr));
+    // grid-template-areas: '';
+}

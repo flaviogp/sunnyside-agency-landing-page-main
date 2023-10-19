@@ -1,0 +1,24 @@
+.we-are-creatives {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .title {
+        width: 100%;
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+}
