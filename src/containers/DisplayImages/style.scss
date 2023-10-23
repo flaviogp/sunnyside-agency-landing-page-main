@@ -1,0 +1,14 @@
+.display-images {
+    width: 100%;
+    display: flex;
+
+    .image {
+        width: 25%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}

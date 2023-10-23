@@ -1,0 +1,38 @@
+.client {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    img {
+        max-width: 70px;
+        max-height: 70px;
+        border-radius: 50%;
+    }
+
+    .client-bio {
+        margin: 40px 0 70px 0;
+        line-height: 30px;
+        color: $dark-desaturated-cyan
+    }
+
+    .client-info {
+        .client-name {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: $very-dark-desaturated-blue;
+        }
+
+        .client-role {
+            color: $grayish-blue
+        }
+
+    }
+}

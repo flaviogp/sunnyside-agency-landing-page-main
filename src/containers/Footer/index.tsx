@@ -2,13 +2,12 @@ import FacebookIcon from '../../assets/images/icon-facebook.svg'
 import InstagramIcon from '../../assets/images/icon-instagram.svg'
 import TwitterIcon from '../../assets/images/icon-twitter.svg'
 import PinterestIcon from '../../assets/images/icon-pinterest.svg'
-import Brand from '../../assets/images/logo.svg'
+import Brand from '../../assets/images/logo-footer.svg'
 
 export default function Footer() {
-
     return (
         <footer>
-            <img src={Brand} alt="" />
+            <img src={Brand} alt="Sunnyside Logo" />
             <ul>
                 <li>
                     <a href="#">About</a>

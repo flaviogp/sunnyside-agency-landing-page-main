@@ -16,7 +16,7 @@ export default function GridProducts() {
     return (
         <div className="grid-descriptions">
             <ImageContainer 
-                fieldName="egg"
+                fieldName="transform-image"
                 urlDesktop={TransformDesktopImage}
                 urlMobile={TransformMobileImage}
             />
@@ -26,7 +26,7 @@ export default function GridProducts() {
                 text="we are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
             />
             <ImageContainer
-                fieldName="cup"
+                fieldName="standout-image"
                 urlDesktop={StandOutDesktopImage}
                 urlMobile={StandOutMobileImage}
             />

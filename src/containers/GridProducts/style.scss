@@ -1,12 +1,69 @@
 @import '../../components/Description/style.scss';
-@import '../../components/ImageContainer/style.scss';
 
 
 .grid-descriptions {
-
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(500px, 1fr));
-    // grid-template-areas: '';
+    grid-template-areas: 'transform-text transform-image' 'standout-image standout' 'graphic photography';
+
+    .image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px;
+
+        img {
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .desc-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #000;
+            max-width: 60%;
+            text-align: center;
+            align-self: flex-end;
+
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+#transform-image {
+    grid-area: transform-image;
+}
+
+#transform {
+    grid-area: transform-text;
+
+}
+
+#standout-image {
+    grid-area: standout-image;
+
+}
+
+#standout {
+    grid-area: standout;
+
+}
+
+#graphic {
+    grid-area: graphic;
+
+}
+
+#photography {
+
+    grid-area: photography;
 }

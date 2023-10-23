@@ -6,7 +6,7 @@ interface ClientTestimonialProps {
     clientRole: string;
 }
 
-export default function ClientTestimonials({bio, clientName, clientRole, clientImage}: ClientTestimonialProps) {
+export default function Client({bio, clientName, clientRole, clientImage}: ClientTestimonialProps) {
 
     return (
         <div className="client">
