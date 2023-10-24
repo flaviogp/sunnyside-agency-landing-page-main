@@ -8,6 +8,47 @@ footer {
 
     img {
         width: 200px;
-        height: 30px;
+        height: 35px;
     }
+
+    .links,
+    .socials {
+        ul {
+            display: flex;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    .links {
+
+        margin-bottom: 50px;
+
+        ul {
+            li {
+                a {
+                    color: $very-dark-grayish-blue;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+
+    .socials {
+
+        ul {
+            li {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
 }

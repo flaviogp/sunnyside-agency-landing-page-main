@@ -1,8 +1,9 @@
 .we-are-creatives {
     width: 100%;
-    height: 550px;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    // align-items: center;
     background-image: url(../assets/images/desktop/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,11 +15,35 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px;
-        font-size: 2.8rem;
-        text-transform: uppercase;
+        gap: 100px;
         color: #fff;
-        letter-spacing: 5px;
+
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 700px) {
+                font-size: 3rem;
+            }
+
+            @media screen and (max-width: 605px) {
+                font-size: 3rem;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        background-image: url(../assets/images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
 }

@@ -35,4 +35,68 @@ header {
             }
         }
     }
+
+    label {
+        display: none;
+
+        // input[type=checkbox] {}
+    }
+
+    .menu-open {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        width: 350px;
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        right: 35px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -30px;
+            width: 30px;
+            height: 30px;
+            background-image: linear-gradient(135deg, transparent 50%, #fff 50%);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                color: $dark-moderate-cyan;
+            }
+
+            button {
+                background-color: $yellow;
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 750px) {
+
+        label {
+            display: block;
+
+            &:before {
+                content: url(../assets/images/icon-hamburger.svg);
+            }
+
+            input[type=checkbox] {
+                visibility: hidden;
+            }
+        }
+
+        nav {
+            display: none;
+            width: 0;
+        }
+
+    }
 }

@@ -8,30 +8,43 @@ export default function Footer() {
     return (
         <footer>
             <img src={Brand} alt="Sunnyside Logo" />
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-            </ul>
+            <div className="links">
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                </ul>
+            </div>
             <div className="socials">
-                <a href="#">
-                    <img src={FacebookIcon} alt="Facebook icon" />
-                </a>
-                <a href="#">
-                    <img src={InstagramIcon} alt="Instagram icon" />
-                </a>
-                <a href="#">
-                    <img src={TwitterIcon} alt="Twitter icon" />
-                </a>
-                <a href="#">
-                    <img src={PinterestIcon} alt="Pinterest icon" />
-                </a>
+                <ul className="list-socials">
+                    <li>
+                        <a href="#">
+                            <img src={FacebookIcon} alt="Facebook icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src={InstagramIcon} alt="Instagram icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src={TwitterIcon} alt="Twitter icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src={PinterestIcon} alt="Pinterest icon" />
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </footer>
     )

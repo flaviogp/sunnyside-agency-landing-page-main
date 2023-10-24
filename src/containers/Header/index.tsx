@@ -1,10 +1,16 @@
+import { useState } from 'react'
 import Brand from '../../assets/images/logo.svg'
+
+
+
 export default function Header() {
+  const [menu, setmenu] = useState(false)
+
 
   return (
     <header>
       <img src={Brand} alt="sunnyside logo" />
-      <nav>
+      <nav className={menu ? 'menu-open' : ''}>
         <ul>
           <li>
             <a href="#">About</a>
@@ -20,6 +26,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <label htmlFor="hamburguer-menu">
+        <input type="checkbox" name="hamburguer-menu" id="hamburguer-menu" onChange={() => setmenu(!menu)}/>
+      </label>
     </header>
 
   )
