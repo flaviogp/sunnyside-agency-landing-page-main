@@ -30,6 +30,13 @@ header {
                 font-weight: 700;
                 text-transform: uppercase;
                 font-family: 'Fraunces', serif;
+                transition: all .4s;
+
+                &:hover {
+                    background-color: #69cbfc;
+                    color: #fff;
+                    cursor: pointer;
+                }
             }
         }
     }

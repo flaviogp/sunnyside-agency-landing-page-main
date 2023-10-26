@@ -48,6 +48,17 @@
     #transform {
         grid-area: transform-text;
 
+        a {
+            transition: ease-in-out .4s;
+
+            &:hover {
+                &:after {
+                    background-color: $yellow;
+                    opacity: 1;
+                }
+            }
+        }
+
     }
 
     #standout-image {
@@ -57,6 +68,17 @@
 
     #standout {
         grid-area: standout;
+
+        a {
+            transition: ease-in-out .4s;
+
+            &:hover {
+                &:after {
+                    background-color: $soft-red;
+                    opacity: 1;
+                }
+            }
+        }
 
     }
 
