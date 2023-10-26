@@ -11,7 +11,7 @@ export default function ImageContainer({ fieldName, urlDesktop, urlMobile, descr
     return (
         <div className="image" id={fieldName}>
             <picture>
-                <source media="(max-width: 700px)" srcSet={urlMobile} />
+                <source media="(max-width: 400px)" srcSet={urlMobile} />
                 <img src={urlDesktop} alt={`Image ${fieldName}`} />
             </picture>
             {

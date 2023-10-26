@@ -7,19 +7,23 @@
 
 
     h2 {
-        width: max-content;
         margin-bottom: 70px;
         text-transform: uppercase;
         letter-spacing: 5px;
         font-weight: 700;
         color: $grayish-blue;
-
+        font-size: 1.5em;
+        text-align: center;
 
     }
 
     .clients {
-        // width: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        gap: 30px;
+
+        flex-wrap: wrap;
+
     }
 }

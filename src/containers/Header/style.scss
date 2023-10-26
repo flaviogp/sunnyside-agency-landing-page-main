@@ -3,9 +3,7 @@ header {
     max-width: 1400px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top: 0;
+    background-color: #3EBFFF;
     padding: 20px;
 
     img {
@@ -38,8 +36,6 @@ header {
 
     label {
         display: none;
-
-        // input[type=checkbox] {}
     }
 
     .menu-open {
@@ -51,6 +47,11 @@ header {
         position: absolute;
         top: 100px;
         right: 35px;
+
+        @media screen and (max-width: 420px) {
+            width: 100%;
+            right: 0;
+        }
 
         &::before {
             content: '';
